@@ -1,0 +1,105 @@
+.css-l83su-MuiDrawer-docked .MuiDrawer-paper {
+  border-radius: 34px;
+  opacity: 1;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  margin-left: 10px;
+  margin-top: 11px;
+  margin-bottom: 24px;
+  height: 97%;
+  background: #fafafb;
+}
+
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+  overflow-y: inherit;
+}
+
+.css-cveggr-MuiListItemIcon-root {
+  min-width: 33px;
+}
+
+.css-bshv44-MuiButtonBase-root-MuiListItem-root {
+  margin-left: 25px;
+}
+
+.css-h4y409-MuiList-root {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 8px;
+}
+
+.css-l83su-MuiDrawer-docked .MuiDrawer-paper {
+  width: 241px;
+  box-sizing: border-box;
+  top: 65px;
+}
+
+.css-l83su-MuiDrawer-docked .MuiDrawer-paper {
+  top: 0px;
+}
+
+.css-10hburv-MuiTypography-root {
+  font-family: var(--font-family) !important;
+  color: var(--font-color);
+  font-weight: 500;
+}
+
+/* Basic styles for ListItem */
+.MuiListItem-root {
+  transition: background-color 0.3s, color 0.3s;
+  width: 87%;
+}
+
+/* Hover effect */
+.MuiListItem-root:hover {
+  background-color: #e0e0e0;
+  color: var(--primary-color);
+  border-left: 5px solid var(--primary-color);
+  border-radius: 0 8px 6px 0px;
+}
+
+/* Optional: Apply styles to icons or text within the ListItem */
+.MuiListItem-root:hover .MuiListItemIcon-root {
+  color: var(--primary-color);
+}
+
+.MuiListItem-root:hover .MuiListItemText-primary {
+  font-weight: bold;
+}
+
+/* Container styling */
+.container {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  gap: 5px; /* Space between icon and text */
+
+  margin: 45px 0px 0px 55px;
+}
+
+/* Icon styling */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+  border-radius: 50%; /* Circle shape */
+  background-color: var(--primary-color);
+  color: #f9f9f9; /* Color of the icon */
+}
+
+/* Text styling */
+.text {
+  display: flex;
+  align-items: center;
+}
+
+/* Spaced text styling */
+.spaced-text {
+  font-size: 162%;
+  font-weight: bold;
+}
