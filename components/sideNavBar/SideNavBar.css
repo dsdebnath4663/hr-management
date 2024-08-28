@@ -72,7 +72,7 @@
 }
 
 /* Container styling */
-.container {
+.sidenav-container {
   display: flex;
   align-items: center; /* Align items vertically centered */
   gap: 5px; /* Space between icon and text */

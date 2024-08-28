@@ -15,7 +15,8 @@ const Navbar = () => {
 
     // Clear user session from cookies
     document.cookie = 'token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax;';
-
+    // Refresh the page
+    window.location.reload();
     // Redirect to login page
     router.push('/login');
   };
@@ -60,6 +61,8 @@ const Navbar = () => {
               <Typography variant="body2" color="textSecondary">
                 HR Manager
               </Typography>
+              <Button color="inherit" onClick={handleLogout}>Logout</Button>
+
             </Box>
           </Box>
 

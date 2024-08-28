@@ -1,0 +1,59 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  height: 200px;
+  width: 542px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-icon {
+  font-size: 50px;
+}
+
+.upload-file-label {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+  border-radius: 9px;
+  background: var(--primary-color);
+  color: white;
+}
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root:hover {
+  background: var(--primary-color-hover);
+}
+
+.hidden-file-input {
+  display: none;
+}
+
+.choose-file-text {
+  color: var(--primary-color);
+}

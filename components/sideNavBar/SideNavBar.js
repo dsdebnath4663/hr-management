@@ -28,12 +28,12 @@ const SideNav = () => {
       }}
     >
 
-      <div class="container">
-        <div class="icon">
+      <div className="sidenav-container">
+        <div className="icon">
           <AllInclusiveIcon />
         </div>
-        <div class="text">
-          <span class="spaced-text">HRMS</span>
+        <div className="text">
+          <span className="spaced-text">HRMS</span>
         </div>
       </div>
 
@@ -114,7 +114,7 @@ const SideNav = () => {
           <ListItemIcon >
             <SettingsIcon /> {/* Icon for the "All Employee" item */}
           </ListItemIcon>
-          <ListItemText primary="Setting" />
+          <ListItemText primary="Settings" />
         </ListItem>
 
 

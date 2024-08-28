@@ -1,0 +1,56 @@
+img {
+  height: 75%;
+  width: 100%;
+}
+.css-nzinn5-MuiContainer-root {
+  /* margin-right: 48px; */
+  margin-top: 110px;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0px 0px 12px 0px;
+}
+
+.MuiTextField-root:hover .MuiInputLabel-root {
+  color: var(--primary-color);
+}
+
+/* styles.css */
+.custom-textfield
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline,
+.custom-textfield
+  .MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border: 3px solid var(--primary-color); /* Apply custom border on focus and hover */
+  border-radius: 2%; /* Apply custom border-radius on focus and hover */
+}
+.box-container {
+  display: flex;
+  align-items: center; /* Center items vertically if the height is larger */
+  justify-content: space-between; /* Distribute space between items */
+}
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: var(--primary-color);
+}
+
+.css-1fu7jd5-MuiButtonBase-root-MuiButton-root {
+  background-color: var(--primary-color);
+}
+
+.css-1fu7jd5-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: #3510d1;
+}
+.css-r40f8v-MuiTypography-root {
+  color: var(--primary-color);
+}
+
+/* styles.css */
+.container {
+  margin-top: 107px !important;
+}

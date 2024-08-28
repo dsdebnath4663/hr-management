@@ -13,10 +13,19 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import "./employee.css";
+import { useRouter } from 'next/navigation';
 
 function EmployeeDashBoard() {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
+
+
+
+  const router = useRouter();
+
+  const handleAddEmployee = () => {
+    router.push('/employee/add-employee'); // Replace '/add-employee' with your desired route
+  };
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
@@ -40,7 +49,7 @@ function EmployeeDashBoard() {
 
   return (
     <ProtectedRoute allowedRoles={['employee', 'admin']}>
-      <Container sx={{ padding: '0px' }}>
+      <Container sx={{ padding: '0px', marginRight: '12px' }}>
         <Grid container spacing={3}>
           {/* First Row: Search Bar */}
           <Grid item xs={12} md={6}>
@@ -67,6 +76,7 @@ function EmployeeDashBoard() {
                   fullWidth
                   variant="contained"
                   startIcon={<AddCircleOutlineIcon />}
+                  onClick={handleAddEmployee}
                 >
                   Add New Employee
                 </Button>

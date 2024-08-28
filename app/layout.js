@@ -1,5 +1,5 @@
 'use client'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -10,6 +10,15 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
+  const [tokenExists, setTokenExists] = useState(false);
+
+  useEffect(() => {
+    // Check for the token when the component mounts
+    const token = localStorage.getItem('token');
+    setTokenExists(!!token);
+  }, []); // Empty dependency array means this runs once on mount
+
+
   return (
     <html lang="en">
       <Head>
@@ -22,13 +31,23 @@ export default function RootLayout({ children }) {
       </Head>
       <body>
         <CssBaseline />
-        <Navbar />
-        <SideNav />
 
-        <main style={{ marginLeft: 240, padding: '16px', transition: "margin 0.3s" }}>
+
+        {tokenExists &&
+          (<>
+            <Navbar />
+            <SideNav />
+          </>)
+        }
+
+
+
+        {/* <main style={{ marginLeft: 240, padding: '16px', transition: "margin 0.3s" }}> */}
+        <main>
+
           {children}
         </main>
       </body>
-    </html>
+    </html >
   );
 }

@@ -22,3 +22,56 @@
 .css-1fu7jd5-MuiButtonBase-root-MuiButton-root {
   background-color: var(--primary-color); /* Use the color variable */
 }
+
+/* .css-q8hpuo-MuiFormControl-root,
+.css-z3c6am-MuiFormControl-root-MuiTextField-root, */
+/* .css-q8hpuo-MuiFormControl-root  */
+.text-control {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.dropdown {
+  margin-top: 16px !important;
+}
+
+.left-text {
+  /* Styles for left text, if needed */
+  margin-right: 2%;
+  width: 50%;
+}
+
+.right-text {
+  /* Styles for right text, if needed */
+  width: 50%;
+}
+
+.span-width {
+  width: 45%;
+  flex: 1; /* Makes the child divs equal width */
+  padding: 2px;
+}
+
+.conatiner-margin {
+  margin-top: -23px;
+}
+
+.text-field {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.css-1wf8b0h-MuiTabs-flexContainer {
+  justify-content: start;
+}
+
+.custom-tabs .MuiTabs-indicator {
+  background-color: var(
+    --primary-color
+  ); /* Replace #yourColor with the desired color */
+}
+
+.custom-tab.Mui-selected {
+  border-bottom: 2px solid var(--primary-color); /* Replace #yourColor with the desired color */
+  color: var(--primary-color);
+}
