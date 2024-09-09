@@ -31,6 +31,8 @@ const CardComponent = () => {
             >
               {/* Drag & Drop or choose file to upload */}
               Drag & Drop or <span className="choose-file-text">choose file</span> to upload
+
+
             </Typography>
             <input
               type="file"
@@ -39,6 +41,10 @@ const CardComponent = () => {
               onChange={(e) => console.log(e.target.files)} // Handle file selection
             />
           </CardContent>
+          <Typography variant="body2" color="textSecondary">
+            Supported formats: Jpeg, PDF
+          </Typography>
+
         </Card>
       ))}
     </div>

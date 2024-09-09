@@ -46,11 +46,11 @@ const SideNav = () => {
         </ListItem>
 
 
-        <ListItem button component={Link} href="/">
+        <ListItem button component={Link} href="/employee">
           <ListItemIcon >
             <PeopleIcon /> {/* Icon for the "All Employee" item */}
           </ListItemIcon>
-          <ListItemText primary="Home" />
+          <ListItemText primary="All Employee" />
         </ListItem>
 
 
